@@ -1,5 +1,6 @@
 const butInstall = document.getElementById('butInstall');
 const divInstall = document.getElementById('installContainer');
+const divInstallMessage = document.getElementById('installContainerMessage');
       
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js', {
@@ -18,6 +19,7 @@ const divInstall = document.getElementById('installContainer');
       window.deferredPrompt = event;
       // Remove the 'hidden' class from the install button container
       divInstall.classList.toggle('hidden', false);
+      divInstallMessage.classList.toggle('hidden', true);
     });
             
       /*

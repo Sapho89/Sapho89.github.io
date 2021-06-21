@@ -1,0 +1,19 @@
+{
+  "short_name": "RocketLauncher",
+  "name": "MyRocket",
+  "icons": [
+    {
+      "src": "rocket-book_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "rocket-book_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#004B93"
+}

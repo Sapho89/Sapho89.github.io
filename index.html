@@ -7,10 +7,19 @@
 
     <title>PWA - Android/IOS Playground</title>
 
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="rocket-book_192x192.png" />
   </head>
 
   <body>
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./scripts/service-worker.js', {
+          scope: './',
+        });
+      }
+    </script>
 
-<div id="pwa-message"> Can you see me ?</div>
+    <div id="pwa-message">Can you see me ?</div>
   </body>
 </html>

@@ -13,6 +13,9 @@
 
   <body>
     <script type="text/javascript">
+      
+      const butInstall = document.getElementById('butInstall');
+      
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js', {
           scope: './',
@@ -31,7 +34,7 @@
       // Remove the 'hidden' class from the install button container
       divInstall.classList.toggle('hidden', false);
     });
-      
+            
       /*
        Next step is to listen to the click event of the install prompt and install the app. This is where the saved beforeinstallprompt event needs to be triggered,
        so we go back, pick it up and use it inside the event handler of this click of the prompt.

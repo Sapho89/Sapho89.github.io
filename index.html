@@ -8,7 +8,10 @@
     <title>PWA - Android/IOS Playground</title>
 
     <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="rocket-book_192x192.png" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- If the black-translucent is set the content consumes the entire screen. The status bar overlays the top of the viewport as a semi-transparent overlay. -->
+        <meta name="apple-touch-icon" content="rocket-book_192x192.png"> <!-- This specifies the actual icon used on the iOS home screen to represent the web app.-->
+            <meta name="apple-mobile-web-app-title" content="rocket-book_"> <!-- If that title is not specified, the <title> will be used instead-->
   </head>
 
   <body>

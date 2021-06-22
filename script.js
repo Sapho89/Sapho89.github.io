@@ -14,7 +14,7 @@ const divInstallMessage = document.getElementById('installContainerMessage');
         Let the user know that this app is installable as a PWA and they can then click on the custom install button to start the installation flow.
       */
     window.addEventListener('beforeinstallprompt', (event) => {
-      // Prevent the mini-infobar from appearing on mobile
+       // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();
           
       console.log('👍', 'beforeinstallprompt', event); //Would the beforeinstallprompt event be triggered in IOS ?

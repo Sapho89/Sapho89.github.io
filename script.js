@@ -26,7 +26,7 @@ const divInstallMessage = document.getElementById('installContainerMessage');
       */
     window.addEventListener('beforeinstallprompt', (event) => {
        // Prevent Chrome 67 and earlier from automatically showing the prompt
-      event.preventDefault();
+      //event.preventDefault();
           
       console.log('👍', 'beforeinstallprompt', event); //Would the beforeinstallprompt event be triggered in IOS ?
       // Stash the event so it can be triggered later.
